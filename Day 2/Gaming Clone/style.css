@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #151515;
+    color: white;
+}
+header {
+    padding: 20px;
+    background: #222;
+}
+head {
+    color: #00e5ff;
+    text-align: center;
+    padding: 60px;
+}
+header h1 {
+    display: inline;
+    color: #00e5ff;
+    margin-right: 50px;
+}
+header a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+main {
+    text-align: center;
+    padding: 60px;
+}
+h2 {
+    font-size: 40px;
+}
+.games {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.games div {
+    background: #222;
+    padding: 15px;
+}
+.games img {
+    width: 200px;
+}
+button {
+    padding: 10px 20px;
+}

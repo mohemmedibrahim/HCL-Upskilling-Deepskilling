@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+.portfolio {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-side {
+    width: 30%;
+    min-height: 100vh;
+    background: #641f79fd;
+    color: white;
+    text-align: center;
+    padding: 50px 30px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+
+.profile-photo {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 25px;
+}
+
+
+.my-name {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.my-role {
+    color: #38bdf8;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+
+.personal-details {
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+.personal-details p {
+    margin-bottom: 5px;
+}
+
+
+.personal-details b {
+    color: #572fe6;
+    display: block;
+    margin-top: 18px;
+}
+
+
+.left-side a {
+    color: white;
+    text-decoration: none;
+}
+
+.left-side a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+
+
+.right-side {
+    width: 70%;
+    margin-left: 30%;
+}
+
+
+
+.navbar {
+    background: rgb(245, 242, 63);
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+
+.menu {
+    text-align: right;
+}
+
+
+.menu a {
+    color: #111827;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+
+.menu a:hover {
+    color: #2563eb;
+}
+
+
+
+.home {
+    min-height: 90vh;
+    text-align: center;
+    padding: 180px 30px;
+    background: #eaf6ff;
+}
+
+
+.small {
+    font-size: 20px;
+    color: #555;
+}
+
+
+.name {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #111827;
+}
+
+
+.role {
+    font-size: 21px;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+
+.home p {
+    margin-bottom: 15px;
+}
+
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.button:hover {
+    background: #1d4ed8;
+}
+.public-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.public-links span {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.public-links a {
+    text-decoration: none;
+}
+
+.public-links span:hover {
+    background: white;
+    color: #2563eb;
+    transform: translateX(5px);
+}
+
+.section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #111827;
+}
+
+
+.section > p:not(.title) {
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.7;
+}
+
+#education {
+    text-align: center;
+}
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.education-box {
+    width: 45%;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 0 3px 10px #ddd;
+    transition: 0.3s ease;
+}
+
+.education-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #bbb;
+    border-color: #2563eb;
+}
+
+.edu-type {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.college-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.education-box p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.education-box .mark {
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.skills {
+    width: 80%;
+    margin: auto;
+}
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.java {
+    width: 85%;
+}
+
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 85%;
+}
+
+.rest {
+    width: 75%;
+}
+
+.mysql {
+    width: 80%;
+}
+
+.skill:hover .skill-progress {
+    background: #111827;
+}
+
+
+.project {
+    background: white;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 10px #ddd;
+    transition: 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+    border-color: #2563eb;
+    box-shadow: 0 10px 25px #bbb;
+}
+
+.project-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.project p {
+    line-height: 1.6;
+}
+.subjects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+}
+
+.subjects span {
+    padding: 12px 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #2563eb;
+    box-shadow: 0 3px 8px #ddd;
+    transition: 0.3s;
+}
+
+.subjects span:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px #bbb;
+}
+.certifications {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.certificate-box {
+    width: 350px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 10px #ddd;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.certificate-box:hover {
+    transform: translateY(-8px);
+    border-color: #2563eb;
+    box-shadow: 0 10px 25px #bbb;
+}
+
+.certificate-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.certificate-box p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+
+
+.footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    .portfolio {
+        display: block;
+    }
+
+    .left-side {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .right-side {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .menu {
+        text-align: center;
+    }
+
+    .menu a {
+        margin: 5px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .home {
+        padding: 130px 20px;
+    }
+}

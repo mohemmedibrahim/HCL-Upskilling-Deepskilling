@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billing Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IBRAHIM'S STORE</h1>
+        <p class="subtitle">Billing System</p>
+        <div class="products">
+            <div class="product">
+                <h3>Rice</h3>
+                <p>₹60 / kg</p>
+                <button onclick="addItem('Rice', 60)">Add</button>
+            </div>
+            <div class="product">
+                <h3>Sugar</h3>
+                <p>₹45 / kg</p>
+                <button onclick="addItem('Sugar', 45)">Add</button>
+            </div>
+            <div class="product">
+                <h3>Milk</h3>
+                <p>₹30 / packet</p>
+                <button onclick="addItem('Milk', 30)">Add</button>
+            </div>
+            <div class="product">
+                <h3>Bread</h3>
+                <p>₹40 / packet</p>
+                <button onclick="addItem('Bread', 40)">Add</button>
+            </div>
+            <div class="product">
+                <h3>Biscuits</h3>
+                <p>₹20 / packet</p>
+                <button onclick="addItem('Biscuits', 20)">Add</button>
+            </div>
+            <div class="product">
+                <h3>Soap</h3>
+                <p>₹35 / piece</p>
+                <button onclick="addItem('Soap', 35)">Add</button>
+            </div>
+            <div class="product">
+                <h3>Shampoo</h3>
+                <p>₹120 / bottle</p>
+                <button onclick="addItem('Shampoo', 120)">Add</button>
+            </div>
+            <div class="product">
+                <h3>Toothpaste</h3>
+                <p>₹85 / piece</p>
+                <button onclick="addItem('Toothpaste', 85)">Add</button>
+            </div>
+            <div class="product">
+                <h3>Oil</h3>
+                <p>₹150 / litre</p>
+                <button onclick="addItem('Oil', 150)">Add</button>
+            </div>
+            <div class="product">
+                <h3>Tea</h3>
+                <p>₹100 / packet</p>
+                <button onclick="addItem('Tea', 100)">Add</button>
+            </div>
+        </div>
+        <div class="bill">
+            <h2>IBRAHIM'S STORE</h2>
+            <p>Fresh Products - Best Prices</p>
+            <p>Bill No: <span id="billNo"></span></p>
+            <p>Date: <span id="date"></span></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="billItems">
+                </tbody>
+            </table>
+            <div class="summary">
+                <p>
+                    Sub Total:
+                    <span id="subtotal">₹0</span>
+                </p>
+                <p>
+                    GST (5%):
+                    <span id="gst">₹0</span>
+                </p>
+                <h3>
+                    Grand Total:
+                    <span id="total">₹0</span>
+                </h3>
+            </div>
+            <button class="generate" onclick="generateBill()">
+                Generate Bill
+            </button>
+            <button class="clear" onclick="clearBill()">
+                Clear Bill
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <p class="subtitle">Calculate your Body Mass Index</p>
+
+        <form id="bmiForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter your age"
+                   min="2" max="120" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="height">Height (cm)</label>
+            <input type="number" id="height"
+                   placeholder="Enter height in cm"
+                   min="50" max="250" step="any" required>
+
+            <label for="weight">Weight (kg)</label>
+            <input type="number" id="weight"
+                   placeholder="Enter weight in kg"
+                   min="2" max="500" step="any" required>
+
+            <div class="buttons">
+                <button type="submit">Calculate BMI</button>
+                <button type="reset" class="reset">Reset</button>
+            </div>
+        </form>
+
+        <div id="result" class="result" aria-live="polite" hidden>
+            <h2>Your Result</h2>
+            <p id="greeting"></p>
+            <p>Your BMI is</p>
+            <h1 id="bmiValue">0.0</h1>
+            <h3 id="category"></h3>
+            <p id="message"></p>
+            <p class="note">
+                BMI is a screening measure, not a diagnosis.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

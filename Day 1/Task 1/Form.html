@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <center>
+        <h1>Registration Form</h1>
+
+        <form>
+            <table cellpadding="8">
+
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="number" name="age"></td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                        <input type="radio" name="gender" value="Other"> Other
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+
+                <tr>
+                    <td>Phone No:</td>
+                    <td><input type="tel" name="phone"></td>
+                </tr>
+
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea name="address" rows="3" cols="22"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>City:</td>
+                    <td><input type="text" name="city"></td>
+                </tr>
+
+                <tr>
+                    <td>State:</td>
+                    <td><input type="text" name="state"></td>
+                </tr>
+
+                <tr>
+                    <td>Qualification:</td>
+                    <td>
+                        <select name="qualification">
+                            <option value="">Select</option>
+                            <option>10th</option>
+                            <option>12th</option>
+                            <option>Diploma</option>
+                            <option>UG</option>
+                            <option>PG</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </center>
+
+</body>
+</html>
