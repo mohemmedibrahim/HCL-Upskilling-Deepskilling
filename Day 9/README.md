@@ -6,25 +6,6 @@ A C# .NET 10 console project demonstrating course catalogue, learner registratio
 - .NET 10 SDK
 - Visual Studio 2022 with a .NET 10-capable installation, or VS Code with C# Dev Kit
 
-## Run in Visual Studio
-1. Extract the ZIP.
-2. Open `TrainingManagementSystem.csproj`.
-3. Select the project as startup project if prompted.
-4. Build using **Build > Build Solution**.
-5. Run with **Ctrl+F5** (or F5).
-
-## Run in VS Code / terminal
-Open the folder containing `TrainingManagementSystem.csproj` in VS Code. Open **Terminal > New Terminal**, then run:
-
-```powershell
-dotnet --list-sdks
-dotnet restore
-dotnet build
-dotnet run
-```
-
-If no 10.0 SDK is listed, install the .NET 10 SDK and reopen the terminal.
-
 ## Suggested first test
 1. Enter `1` to view the five sample courses.
 2. Enter `4` and register a learner with a unique ID, name, 10–15 digit contact number, and email.
